@@ -1,6 +1,6 @@
 <script lang="ts">
     import Link from './Link.svelte';
-    import RickAndMorty from './rick-and-morty/RickAndMorty.svelte';
+    import RickAndMorty from './rick-and-morty_mobx/RickAndMorty.svelte';
 
     export let name: string;
     let show2ndLink = false;
