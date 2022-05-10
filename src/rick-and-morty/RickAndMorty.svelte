@@ -16,5 +16,5 @@
     setContext(RickAndMortyCtx, ctx);
 </script>
 
-<h1>Rick and Morty app! (MobX)</h1>
+<h1>Rick and Morty app!</h1>
 <CharacterList />

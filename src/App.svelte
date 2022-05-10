@@ -1,9 +1,11 @@
 <script lang="ts">
     import Link from './Link.svelte';
-    import RickAndMorty from './rick-and-morty_mobx/RickAndMorty.svelte';
+    import RickAndMorty from './rick-and-morty/RickAndMorty.svelte';
+    import RickAndMortyMobx from './rick-and-morty_mobx/RickAndMorty.svelte';
 
     export let name: string;
     let show2ndLink = false;
+    let useMobX = false;
 </script>
 
 <main>
@@ -13,7 +15,15 @@
         <Link name="Pluto" />
     {/if}
 
-    <RickAndMorty />
+    <div>
+        <input id="use-mobx" type="checkbox" bind:checked={useMobX} />
+        <label for="use-mobx">Use MobX</label>
+    </div>
+    {#if useMobX}
+        <RickAndMortyMobx />
+    {:else}
+        <RickAndMorty />
+    {/if}
 </main>
 
 <style>
