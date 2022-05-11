@@ -1,5 +1,5 @@
 import { chain, uniqBy } from 'lodash';
-import { derived, get, Readable, Writable, writable } from 'svelte/store';
+import { derived, Readable, Writable, writable } from 'svelte/store';
 import type { ApiService } from '../api/api.service';
 import type { Character, GetAllCharactersOptions, PaginationInfo } from '../api/api.types';
 

@@ -7,7 +7,7 @@
     const PAGE_SIZE = 20;
 
     const {
-        store: { charactersListService },
+        stores: { charactersListService },
     } = getContext<IRickAndMortyContext>(RickAndMortyCtx);
 
     const { characters, currentPage, isLoading, pageInfo } = charactersListService;

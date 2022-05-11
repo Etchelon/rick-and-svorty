@@ -3,7 +3,7 @@ import type { RickAndMortyService } from './store/rickandmorty.service';
 
 export interface IRickAndMortyContext {
     api: ApiService;
-    store: RickAndMortyService;
+    stores: RickAndMortyService;
 }
 
 export const RickAndMortyCtx = Symbol.for('RickAndMortyCtx');
