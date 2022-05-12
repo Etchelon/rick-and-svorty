@@ -35,9 +35,9 @@ export default {
     input: 'src/main.ts',
     output: {
         sourcemap: true,
-        format: 'iife',
+        format: 'es',
         name: 'app',
-        file: 'public/build/bundle.js',
+        dir: 'public/build',
     },
     plugins: [
         replace({
